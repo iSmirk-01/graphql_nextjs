@@ -1,4 +1,4 @@
-import { games as gamesList, authors, reviews } from "@/app/lib/graphql/_db"
+import { games as gamesList, authors, reviews } from "@/app/lib/graphql/backend/_db"
 import { platform } from "os";
 
 let games = [...gamesList]
@@ -51,7 +51,7 @@ export const resolvers = {
       games.splice(index, 1); // Remove the game from the array
       return games; // Return the updated list
     },
-    
+
     addGame(
       _: undefined,
       args: { game: { title: string; platform: string[] } }
