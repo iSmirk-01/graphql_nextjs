@@ -1,4 +1,4 @@
-const games = [
+let games = [
   { id: "1", title: "Zelda, Tears of the Kingdom", platform: ["Switch"] },
   { id: "2", title: "Final Fantasy 7 Remake", platform: ["PS5", "Xbox"] },
   { id: "3", title: "Elden Ring", platform: ["PS5", "Xbox", "PC"] },

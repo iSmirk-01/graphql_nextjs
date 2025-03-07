@@ -1,7 +1,7 @@
 import { ApolloServer } from "@apollo/server";
 import { startServerAndCreateNextHandler } from "@as-integrations/next";
 import { NextRequest } from "next/server";
-import { typeDefs } from "@/app/lib/graphql/types";
+import { typeDefs } from "@/app/lib/graphql/schema";
 import { resolvers } from "@/app/lib/graphql/resolvers"
 
 // Create Apollo Server
