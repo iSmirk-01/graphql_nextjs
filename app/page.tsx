@@ -1,7 +1,15 @@
-import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
+import AddGame from './components/AddGame'
+import AllGames from './components/AllGames'
+import SearchGame from './components/SearchGame'
 
-function Page() {
-  return <div></div>;
+function page() {
+  return (
+    <div>
+      <AllGames />
+      <SearchGame />
+      <AddGame />
+    </div>
+  )
 }
 
-export default Page;
+export default page

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ApolloProvider } from "@apollo/client";
-import client from "@/app/lib/graphql/client/apolloClient"
+import Providers from "./lib/graphql/client/provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +28,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ApolloProvider client={client}>
+        <Providers>
           {children}
-        </ApolloProvider>
+        </Providers>
       </body>
     </html>
   );
