@@ -7,6 +7,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-export default function Providers({ children }: { children: React.ReactNode }) {
+export default function GraphqlProvider({ children }: { children: React.ReactNode }) {
   return <ApolloProvider client={client}>{children}</ApolloProvider>;
 }

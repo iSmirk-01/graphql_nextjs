@@ -1,6 +1,8 @@
-import AddGame from './components/AddGame'
-import AllGames from './components/AllGames'
-import SearchGame from './components/SearchGame'
+import AddGame from './components/games/AddGame'
+import AllGames from './components/games/AllGames'
+import SearchGame from './components/games/SearchGame'
+import AddFormPost from './components/posts/AddFormPost'
+import PostsList from './components/posts/PostsList'
 
 function page() {
   return (
@@ -8,6 +10,8 @@ function page() {
       <AllGames />
       <SearchGame />
       <AddGame />
+      <PostsList />
+      <AddFormPost />
     </div>
   )
 }
